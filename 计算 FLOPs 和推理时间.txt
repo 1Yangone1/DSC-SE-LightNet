@@ -1,0 +1,24 @@
+(venv) PS D:\DSC-SE-LightNet> python evaluate_model.py
+Using device: cuda
+
+=== Original Model (best_model.pth) ===
+FLOPs: 48.64 M
+Params: 4.73 M
+Inference time (batch=64): 6.01 ms
+
+=== Pruned 30% + Fine-tuned Model ===
+FLOPs: 24.36 M
+Params: 2.32 M
+Inference time (batch=64): 6.18 ms
+
+=== Distilled Student Model ===
+FLOPs: 24.36 M
+Params: 2.32 M
+Inference time (batch=64): 5.34 ms
+
+=== Summary Table ===
+Model                     FLOPs (M)    Params (M)   Inference (ms/batch)
+----------------------------------------------------------------------
+Original                  48.64        4.73         6.01                
+Pruned 30% + FT           24.36        2.32         6.18                
+Distilled                 24.36        2.32         5.34    
