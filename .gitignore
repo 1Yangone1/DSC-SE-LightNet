@@ -1,0 +1,34 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.Python
+venv/
+env/
+ENV/
+dist/
+build/
+*.egg-info/
+
+# PyTorch models
+*.pth
+*.pt
+*.pkl
+
+# Data
+data/
+*.tar
+*.zip
+
+# IDE
+.idea/
+.vscode/
+*.iml
+
+# Logs
+*.log
+*.csv.backup
+
+# OS
+.DS_Store
+Thumbs.db
